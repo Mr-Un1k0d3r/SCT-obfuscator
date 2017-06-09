@@ -14,11 +14,15 @@ if __name__ == "__main__":
 	if len(sys.argv) < 2:
 		print "Usage %s [sct file path]" % sys.argv[0]
 		exit(0)
-	
+		
+	original = ""
 	try:
-		original = open(sys.argv[1], "rb").read()
+		for line in open(sys.argv[1], "rb").readlines():
+			if not line[:1] == "'":
+				original += line
 	except:
 		print "[-] Failed to open %s" % sys.argv[1]
+		exit(0)
 		
 	for i in range(0, 256):
 		newval = random.randint(1, 100)
