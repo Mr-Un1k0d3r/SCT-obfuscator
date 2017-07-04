@@ -28,7 +28,7 @@ if __name__ == "__main__":
 		newval = random.randint(1, 100)
 		original = original.replace("(%d)" % i, "(%d-%d)" % (i + newval, newval))
 		
-	for var in ["objExcel", "WshShell", "RegPath", "action", "objWorkbook", "xlmodule"]:
+	for var in ["objExcel", "WshShell", "RegPath", "action", "objWorkbook", "xlmodule","Win32COMDebug"]:
 		newvar = gen_str(random.randrange(5, 25))
 		original = original.replace(var, newvar)
 		
