@@ -1,11 +1,11 @@
 # SCT-obfuscator
-Cobalt Strike SCT payload obfuscator. Rename variables and change harcoded char value to random one.
+SCT payload obfuscator. Rename variables and change harcoded char value to random one.
 
 # Usage
 
 ```
 $ python SCT-obfuscator.py payload.sct
-Cobalt Strike Com Scriptlet payload (SCT file) obfuscator
+COM Scriptlet payload (SCT file) obfuscator
 Mr.Un1k0d3r - RingZer0 Team 2017
 
 
