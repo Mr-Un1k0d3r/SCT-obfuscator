@@ -1,5 +1,5 @@
 # Author: Mr.Un1k0d3r - RingZer0 Team 2017
-# Cobalt Strike Com Scriptlet payload obfuscator
+# COM Scriptlet payload obfuscator
 
 import sys
 import random
@@ -9,7 +9,7 @@ def gen_str(size):
 	return "".join(random.SystemRandom().choice(string.ascii_uppercase + string.ascii_lowercase) for _ in range(size)) 
 
 if __name__ == "__main__":
-	print "Cobalt Strike Com Scriptlet payload (SCT file) obfuscator"
+	print "COM Scriptlet payload (SCT file) obfuscator"
 	print "Mr.Un1k0d3r - RingZer0 Team 2017\n\n"
 	if len(sys.argv) < 2:
 		print "Usage %s [sct file path]" % sys.argv[0]
