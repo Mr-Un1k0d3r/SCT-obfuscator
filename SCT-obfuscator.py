@@ -32,5 +32,5 @@ if __name__ == "__main__":
 		newvar = gen_str(random.randrange(5, 25))
 		original = original.replace(var, newvar)
 		
-	open(sys.argv[1] + ".edit", "wb").write(original)
+	open("%s.edit" % sys.argv[1], "wb").write(original)
 	print "[+] new payload was saved to %s" % sys.argv[1] + ".edit"
